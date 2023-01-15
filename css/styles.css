@@ -1,0 +1,292 @@
+@import url('http://fonts.cdnfonts.com/css/optima');
+*{
+    padding: 0;
+    margin: 0;    
+}
+html {
+    scroll-behavior: smooth;
+    overflow: scroll;  
+    overflow-x: hidden;    
+}
+::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+/* navbar section */
+.wrapper
+{
+    background-color: black;
+}
+#navbar{    
+    display: flex;    
+    width: 100%;    
+    z-index: 9;        
+    color: transparent;
+}
+/* need to find out why this works but home-bg offset class doesnt work this way */
+#navbar.sticky{
+    position: fixed;
+    top: 0px;                
+}
+#home-nav{                
+    margin: 0 0 0 2vh;
+    background-color: transparent;
+    font-family: 'Courier New', monospace;
+    color: #393D47;
+    font-size: 4vh;    
+    text-decoration: none;
+    transition: color .5s;
+}
+#home-nav:hover{
+    color: #ced1c9;
+}
+#aboutme-nav{    
+    background-color: transparent;
+    margin-right: 2vh;
+    color: #393D47;
+    font-size: 4vh;    
+    text-decoration: none;
+    transition: color .5s;
+}
+#aboutme-nav:hover{
+    color: #ced1c9;
+}
+#socials-nav{    
+    background-color: transparent;
+    color: #393D47;
+    margin-right: 2vh;
+    font-size: 4vh;
+    text-decoration: none;
+    transition: color .5s;
+}
+#socials-nav:hover{
+    color: #ced1c9;
+}
+#images-nav{    
+    background-color: transparent;
+    color: #393D47;
+    margin-left: auto;
+    margin-right: 2vh;
+    font-size: 4vh;
+    text-decoration: none;
+    transition: color .5s;
+}
+#images-nav:hover{
+    color: #ced1c9;
+}
+#table-nav{    
+    background-color: transparent;
+    color: #393D47;
+    margin-right: 2vh;
+    font-size: 4vh;
+    text-decoration: none;
+    transition: color .5s;
+}
+#table-nav:hover{
+    color: #ced1c9;
+}
+
+/* home section */
+#home-bg{        
+    background-color: black;    
+    height: 100vh;
+    width: 100%;      
+    display: flex;    
+    align-items: center;
+    overflow: auto;    
+}
+.home-name-bg{            
+    border-radius: 30px;    
+    color:transparent;
+    background-image: linear-gradient(to right,#393D47,70%,black);
+    height:fit-content;     
+    width: 75vw;   
+    margin: 0 0 0 25vw;
+    padding: 2vh 0 2vh 1vw;        
+}
+.home-name-text{    
+    font-size: calc(1rem + 11vh);
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace, sans-serif;
+    background: linear-gradient(to right,#FFD700,black );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* about me section */
+#about-me-bg{    
+    background-color: black;        
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+.about-me{
+    display: flex;        
+    width: 80vw;
+    height: fit-content;
+    background-image:linear-gradient(to right,black,40%,#393D47);
+    border-radius: 10px;    
+}
+.about-me-pic{
+    height: 85vh;
+    border-radius: 10px;
+    margin: 2vh;    
+}
+.about-me-text{
+    display: flex;
+    flex-direction: column;
+}
+.about-me-text-header{
+    color: #ced1c9;    
+    font-size: 5vh;
+    align-self: center;    
+    margin: 2vh 0 2vh 0;
+}
+.about-me-text-name{
+    color: #ced1c9;    
+    font-size: 3vh;
+}
+.about-me-text-work{
+    color: white;    
+    font-size: 2vh;
+    margin: 0 0 1vh 0;
+}
+.about-me-text-content{
+    color: #ced1c9;    
+    font-size: 3vh;    
+}
+
+/* visited section  */
+.visited-box-bg{
+    background-color: black;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.visited-bg{
+    background-image: linear-gradient(to right,#393D47,40%,black);    
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    padding: 2vh 1vw 2vh 1vw;
+    border-radius: 10px;        
+    margin: 0 0 2vh 0;    
+}
+.visited{    
+    color: #ced1c9;
+}
+
+/* footer section */
+#footer-bg{
+    background-color: black;
+    height: fit-content;
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-icon-box{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;    
+}
+.footer-icon{
+    height: 35px;
+    width: auto;    
+    background-color: grey;
+    margin: 0 1vw 0 1vw;   
+    transition: background-color .5s;    
+}
+.footer-icon:hover{
+    background-color: #ced1c9;
+}
+.footer-copyright{
+    margin-top: 2vh;
+    color: white;
+}
+
+/* scroll to top section */
+.top-button{
+    position: fixed;
+    height: 2vw;
+    width: 2vw;
+    display: flex;
+    background-color: #ced1c9;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;    
+    border: 0px;    
+    bottom: 20px;
+    right: 20px;
+    transition: background-color .3s;
+}
+.top-button:hover{
+    background-color: #393D47;
+}
+.upArrow-svg{
+    height: 1.8vw;
+    width: 1.8vw;
+    margin-bottom: 1px;
+}
+@media only screen and (max-width:768px)
+{
+    .top-button{
+        height:4vw;
+        width: 4vw;    
+    }
+    .upArrow-svg{
+        height: 3vw;
+        width: 3vw;
+    }
+}
+@media only screen and (max-width:480px)
+{
+    .top-button{
+        height:8vw;
+        width: 8vw;
+        /* bottom: 40px;
+        right: 40px; */
+    }
+    .upArrow-svg{
+        height: 6vw;
+        width: 6vw;
+    }
+    .home-name-text{
+        font-size: 11vw;
+    }    
+    .about-me{
+        display: flex;        
+        flex-direction: column;
+        width: 80vw;
+        height: fit-content;
+        background-image:linear-gradient(to right,black,40%,#393D47);
+        border-radius: 10px;    
+    }
+    .about-me-pic{          
+        width: 40vw;        
+        height: auto;
+        object-fit:contain;   
+        object-position: top;     
+        align-self: center;    
+    }
+    .about-me-text-header{        
+        font-size: 6vw;    
+    }
+    .about-me-text-name{        
+        font-size: 5vw;
+    }
+    .about-me-text-work{           
+        font-size: 3vw;        
+    }
+    .about-me-text-content{         
+        font-size: 3.5vw;    
+    }
+}

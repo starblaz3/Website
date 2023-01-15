@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="../css/table.css">
+    <link href="http://fonts.cdnfonts.com/css/optima" rel="stylesheet">
+</head>
+
+<body>
+    <!-- TODO: include other page elements here -->
+    <div id="table-bg">
+        <form id="form">            
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your fullname" />
+            </div>            
+            <div class="field">
+                <label for="skill">Skill:</label>
+                <input type="text" id="skill" placeholder="Enter your skill" />
+            </div>            
+            <div class="field">
+                <label for="level">Level:</label>
+                <select name="level" id="level">
+                    <option value="beginner">beginner</option>
+                    <option value="intermediate" selected>intermediate</option>
+                    <option value="proficient">proficient</option>
+                </select>
+            </div>            
+            <div class="field">
+                <label for="comment">Comment:</label>
+                <input type="text" id="comment" placeholder="Enter your comment" />
+            </div>
+            <div class="field">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <table id="table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Skill
+                </th>
+                <th>
+                    Level
+                </th>
+                <th>
+                    Comment
+                </th>
+            </tr>            
+        </table>
+    </div>
+</body>
+<script src="../js/script.js"></script>
+
+</html>

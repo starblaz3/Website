@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+#page-bg{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;    
+}
+.wrapper{
+    background-color: black;
+}
+#navbar{    
+    display: flex;
+    height: 8vh;
+    width: 100%;    
+    z-index: 9;    
+    align-items: center;        
+    color: transparent;
+}
+#navbar.sticky{
+    position: fixed;
+    top: 0px;            
+}
+#home{                
+    margin: 0 0 0 2vh;
+    background-color: transparent;
+    font-family: 'Courier New', monospace;
+    color: #393D47;
+    font-size: 4vh;
+    display: block;
+    text-decoration: none;
+}
+.img-box{
+    height: 50vh;
+    width: auto;    
+    background-color: transparent;
+}
+img{
+    display: block;
+    height: 50vh;
+    width: auto;
+    border-radius: 30px;
+}
